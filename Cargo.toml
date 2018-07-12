@@ -1,0 +1,8 @@
+[package]
+name = "sr"
+version = "0.1.0"
+authors = ["Andrew Cristancho <acristancho0117@gmail.com>"]
+description = "Search multiple search engines using the command line"
+
+[dependencies]
+clap = "2.32.0"
