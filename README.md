@@ -1,7 +1,6 @@
 # Sr
 Search from a variety of Search Engines using the command line
 
-![example](./docs/example.png)
 
 ## Purpose
 I've always found it slow to search for something using a particular search engine. For example, if I wanted to look for a particular crate in crates.io I would have to google crates.io, click the search box, then enter my query. Since I live in the command line this took too long. I thus I needed a way to perform a query on multiple search engines using one super command.
