@@ -1,6 +1,11 @@
 use ::std;
 
 
+extern {
+    pub fn system(process: *const std::os::raw::c_char) -> i32;
+}
+
+
 pub fn google(query: &[String]) {
     let query = query
         .join("+")
@@ -48,9 +53,6 @@ pub fn dict(query: &[String]) {
 }
 
 
-extern {
-    pub fn system(process: *const std::os::raw::c_char) -> i32;
-}
 fn system_shell(process: &str) {
     if let Ok(process) = std::ffi::CString::new(process) {
         unsafe {

@@ -1,5 +1,5 @@
 use ::args;
-use ::engine;
+use ::commands;
 
 
 pub fn start() {
@@ -9,7 +9,7 @@ pub fn start() {
 }
 
 
-#[derive(Debug, Default)]
+#[derive(Default)]
 struct Application {
     engine: String,
     query:  Vec<String>,
@@ -31,22 +31,22 @@ impl Application {
     }
     fn run(&self) {
         if self.engine == "google" {
-            engine::google(&self.query);
+            commands::google(&self.query);
         } 
         else if self.engine == "wiki" {
-            engine::wikipedia(&self.query);
+            commands::wikipedia(&self.query);
         }
         else if self.engine == "crates" {
-            engine::crates_io(&self.query);
+            commands::crates_io(&self.query);
         }
         else if self.engine == "rust" {
-            engine::rust_docs(&self.query);
+            commands::rust_docs(&self.query);
         }
         else if self.engine == "youtube" {
-            engine::youtube(&self.query);
+            commands::youtube(&self.query);
         }
         else if self.engine == "dict" {
-            engine::dict(&self.query);
+            commands::dict(&self.query);
         }
     }
 }

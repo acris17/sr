@@ -1,6 +1,6 @@
 [package]
 name = "sr"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Andrew Cristancho <acristancho0117@gmail.com>"]
 description = "Search multiple search engines using the command line"
 
