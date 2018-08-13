@@ -30,7 +30,7 @@ impl Application {
         }
     }
     fn run(&self) {
-        if self.engine == "google" {
+        if self.engine == "go" {
             commands::google(&self.query);
         } 
         else if self.engine == "wiki" {

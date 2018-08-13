@@ -25,12 +25,12 @@ I've always found it slow to search for something using a particular search engi
 
 ## Examples
 * The following are all the supported search engines
-* `sr wiki topology`
-* `sr google hello world`
-* `sr rust std::env`
-* `sr crates clap`
-* `sr youtube never gonna give you up`
-* `sr dict tomato`
+* wikipedia: `sr wiki topology`
+* google: `sr go hello world`
+* rust: `sr rust std::env`
+* cratesio: `sr crates clap`
+* youtube: `sr youtube never gonna give you up`
+* dictionary: `sr dict tomato`
 
 ## Design
 The design is simple. The CLI recieves both the engine requested and the query as a string. The app then chooses a search engine function based on those inputs. This makes the app modular: I can add as many search engines as I want without technical debt. 
