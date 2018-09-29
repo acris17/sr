@@ -31,22 +31,25 @@ impl Application {
     }
     fn run(&self) {
         if self.engine == "go" {
-            commands::google(&self.query);
+            commands::search_google(&self.query);
         } 
         else if self.engine == "wiki" {
-            commands::wikipedia(&self.query);
+            commands::search_wikipedia(&self.query);
         }
         else if self.engine == "crates" {
-            commands::crates_io(&self.query);
+            commands::search_crates(&self.query);
         }
         else if self.engine == "rust" {
-            commands::rust_docs(&self.query);
+            commands::search_rust(&self.query);
         }
-        else if self.engine == "youtube" {
-            commands::youtube(&self.query);
+        else if self.engine == "yt" {
+            commands::search_youtube(&self.query);
         }
         else if self.engine == "dict" {
-            commands::dict(&self.query);
+            commands::search_dictionary(&self.query);
+        }
+        else if self.engine == "list" {
+            commands::list_engines();
         }
     }
 }

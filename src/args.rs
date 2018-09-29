@@ -15,7 +15,7 @@ pub fn match_arguments() -> ArgMatches<'static> {
              .help("Query for search engine")
              .index(2)
              .multiple(true)
-             .required(true))
+             .required(false))
 
         .get_matches();
     
